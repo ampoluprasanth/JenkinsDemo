@@ -1,10 +1,12 @@
 pipeline {
   agent {
     docker {
-      image 'golang:1.10.1-alpine'
-      label 'docker-cloud'
+      image 'maven:alpine'
     }
     
+  }
+    libraries {
+    lib("SharedLibs")
   }
   stages {
     stage('Stage1') {
