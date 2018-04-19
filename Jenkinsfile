@@ -4,7 +4,7 @@ pipeline {
     stage('Stage1') {
       steps {
         echo 'Jenkins demo'
-        sh 'java -version'
+        sh 'go version'
       }
     }
   }
